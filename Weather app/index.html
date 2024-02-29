@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="search_block">
+    <input type="text" id="city-input" placeholder="Please write the city">
+    <button onclick="searchWeather()">Search</button>
+  </div>
+  <!-- Its web -->
+ <div id="head_block" style="display: none;">
+    <div class="head_info">
+      <div class="info">
+        <div class="city_location">
+          <img src="image/CityLocation.svg" alt="CityLocation">
+          <p>New York</p>
+          <img src="image/Point.svg" alt="point">
+        </div>
+        <h2>Cloudy</h2>
+        <div>
+          <h3>26°C</h3>
+          <p class="text_date">Sunday | 12 Dec 2023</p>
+        </div>
+      </div>
+      <div class="img_size">
+        <img src="image/CloudAndSun.svg" alt="CloudAndSun">
+      </div>
+    </div>
+    <div class="weather_dashboard">
+      <div class="personal_account">
+        <div class="in_content">
+          <div>
+            <img src="image/personal_account/Ellipse 33.png" alt="account">
+          </div>
+          <div class="menu">
+            <div class="block_one">
+              <img src="image/personal_account/weather.png" alt="weather">
+              <p>weather</p>
+            </div>
+            <div class="block_one">
+              <img src="image/personal_account/Explore.png" alt="Explore">
+              <p>explore</p>
+            </div>
+            <div class="block_one">
+              <img src="image/personal_account/Location.png" alt="Location">
+              <p>cities</p>
+            </div>
+            <div class="block_one">
+              <img src="image/personal_account/Settings-alt.png" alt="setting">
+              <p>settings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="two_blocks">
+        <div class="activities">
+          <div class="activities_info">
+            <img src="image/activities/Heart.png" alt="heart">
+            <p>Activities in your area</p>
+          </div>
+          <div class="activities_location">
+            <div class="block_with_card">
+              <img src="image/activities/pictire2.png" alt="pictire1">
+              <p>2km away</p>
+            </div>
+            <div class="block_with_card">
+              <img src="image/activities/pictire1.png" alt="pictire2">
+              <p>1.5km away</p>
+            </div>
+            <div class="block_with_card">
+              <img src="image/activities/pictire3.png" alt="pictire3">
+              <p>3km away</p>
+            </div>
+            <div class="block_with_card">
+              <img src="image/activities/pictire4.png" alt="pictire4">
+              <p>500m away</p>
+            </div>
+          </div>
+        </div>
+        <div class="weather_forecast">
+           <div class="weather_app">
+             <div class="text_inf">
+                <img src="image/weather_forecast/clock.png" alt="clock">
+                <p>24-hour forecast</p>
+             </div>
+             <div class="vector">
+                <img src="image/Vector 1.png" alt="image">
+             </div>
+             <div class="weather_block_one">
+                <h6>26°</h6>
+                <img src="image/weather_forecast/weather1.png" alt="one">
+                <p>11.7km/h</p>
+                <b>Now</b>
+             </div>
+             <div class="weather_block_two">
+                <h6>26°</h6>
+                <img src="image/weather_forecast/weather2.png" alt="two">
+                <p>9.3km/h</p>
+                <b>22:00</b>
+             </div>
+             <div class="weather_block_three">
+              <h6>22°</h6>
+              <img src="image/weather_forecast/weather3.png" alt="three">
+              <p>12km/h</p>
+              <b>00:00</b>
+             </div>
+             <div class="weather_block_for">
+              <h6>16°</h6>
+              <img src="image/weather_forecast/weather4.png" alt="for">
+              <p>15km/h</p>
+              <b>2:00</b>
+             </div>
+             <div class="weather_block_five">
+              <h6>20°</h6>
+              <img src="image/weather_forecast/weather4.png" alt="for">
+              <p>15km/h</p>
+              <b>4:00</b>
+             </div>
+             <div class="weather_block_six">
+                <h6>22°</h6>
+                <img src="image/weather_forecast/weather4.png" alt="six">
+                <p>15km/h</p>
+                <b>6:00</b>
+             </div>
+             <div class="weather_block_seven">
+              <h6>16°</h6>
+              <img src="image/weather_forecast/weather5.png" alt="seven">
+              <p>15km/h</p>
+              <b>4:00</b>
+             </div>
+           </div>
+        </div>
+      </div>
+      <div class="daily_weather_forecast">
+        <div class="weather_slider">
+          <img id="left" src="image/left.png" alt="left">
+          <div class="weather_block">
+            <div class="day_one">
+              <img src="image/daily_weather_forecast/rain.png" alt="rain">
+              <img src="image/daily_weather_forecast/Sun.png" alt="sun">
+              <img src="image/daily_weather_forecast/rain_and sun.png" alt="rain_and_sun">
+              <img src="image/daily_weather_forecast/cloud_and_son.png" alt="cloud_and_son">
+              <img src="image/daily_weather_forecast/groza.png" alt="groza">
+            </div>
+            <div class="day_two">
+              <p>FRI</p>
+              <p>SAT</p>
+              <p>SUN</p>
+              <p>MON</p>
+              <p>TUES</p>
+            </div>
+          </div>
+          <img id="right" src="image/right.png" alt="right">
+        </div>
+        <div class="date_now">
+          <img src="image/daily_weather_forecast/clock.png" alt="clock">
+          <p id="real_time">8:00PM GMT</p>
+        </div>
+        <div class="air_text">
+          <h5>AIR CONDITIONS</h5>
+          <div class="group_info">
+            <div class="block_info_one">
+              <img src="image/daily_weather_forecast/temperature.png" alt="temperature">
+              <div class="text_info">
+                <p>Real Feel</p>
+                <b id="temperature">30°</b>
+              </div>
+            </div>
+            <div class="block_info_two">
+              <img src="image/daily_weather_forecast/wind.png" alt="wind">
+              <div style="margin-left: 12px;" class="text_info">
+                <p>Wind</p>
+                <b id="wind">0.8 km/hr</b>
+              </div>
+            </div>
+            <div class="block_info_three">
+              <img src="image/daily_weather_forecast/capli.png" alt="capli">
+              <div class="text_info">
+                <p>Chance of rain</p>
+                <b id="rain">2%</b>
+              </div>
+            </div>
+            <div class="block_info_for">
+              <img src="image/daily_weather_forecast/suni.png" al="suni">
+              <div class="text_info">
+                <p>UV Index</p>
+                <b id="index">4</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+ <!-- Its mobile -->
+ <div id="mobile_block" style="display: none;">
+    <div class="mobile_info">
+      <div class="mobile_city">
+        <img src="image/CityLocation.svg" alt="CityLocation">
+        <p>New York</p>
+        <img class="deg" src="image/Point.svg" alt="point">
+      </div>
+      <div class="mobile_account">
+        <img src="image/personal_account/Ellipse 33.png" alt="account">
+      </div>
+    </div>
+    <div class="mobile_weather_block">
+        <h6>Cloudy</h6>
+        <img src="image/CloudAndSun.svg" alt="CloudAndSun">
+        <h3>26°C</h3>
+        <p class="text_date_mobile">Sunday | 12 Dec 2023</p>
+    </div>
+    <div class="weather_mobile_slider">
+      <div class="weather_slider">
+        <img id="left" src="image/left.png" alt="left">
+        <div class="weather_block">
+          <div class="day_one">
+            <img src="image/daily_weather_forecast/rain.png" alt="rain">
+            <img src="image/daily_weather_forecast/Sun.png" alt="sun">
+            <img src="image/daily_weather_forecast/rain_and sun.png" alt="rain_and_sun">
+            <img src="image/daily_weather_forecast/cloud_and_son.png" alt="cloud_and_son">
+            <img src="image/daily_weather_forecast/groza.png" alt="groza">
+          </div>
+          <div class="day_two">
+            <p>FRI</p>
+            <p>SAT</p>
+            <p>SUN</p>
+            <p>MON</p>
+            <p>TUES</p>
+          </div>
+        </div>
+        <img id="right" src="image/right.png" alt="right">
+      </div>
+    </div>
+    <div class="weather_mobile_analysys">
+      <div class="weather_forecast">
+        <div class="weather_app">
+          <div class="text_infor">
+             <img src="image/weather_forecast/clock.png" alt="clock">
+             <p>24-hour forecast</p>
+          </div>
+          <div class="vector">
+             <img src="image/mobile_vector.png" alt="image">
+          </div>
+          <div class="weather_block_one">
+             <h6>30°</h6>
+             <img src="image/weather_forecast/weather1.png" alt="one">
+             <p>11.7km/h</p>
+             <b>Now</b>
+          </div>
+          <div class="weather_block_two">
+             <h6>26°</h6>
+             <img src="image/weather_forecast/weather2.png" alt="two">
+             <p>9.3km/h</p>
+             <b>22:00</b>
+          </div>
+          <div class="weather_block_three">
+           <h6>22°</h6>
+           <img src="image/weather_forecast/weather3.png" alt="three">
+           <p>12km/h</p>
+           <b>00:00</b>
+          </div>
+          <div class="weather_block_for">
+           <h6>16°</h6>
+           <img src="image/weather_forecast/weather4.png" alt="for">
+           <p>15km/h</p>
+           <b>2:00</b>
+          </div>
+          <button class="weather_button">
+            5-day forecast
+          </button>
+        </div>
+     </div>
+    </div>
+  </div>
+ </div>
+
+</body>
+<script src="app.js"></script>
+</html>
